@@ -1,8 +1,8 @@
 /*
 filename: main.cpp
-Developer Name: ........
-Date:
-/
+Developer Name: Sejin Yoon
+Date: May 15, 2023
+*/
 
 
 #include <iostream>
