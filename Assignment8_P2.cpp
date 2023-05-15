@@ -3,8 +3,8 @@ using namespace std;
 /*
 
 filename: Assignment8_P2.cpp
-Developer Name: ........
-Date:
+Developer Name: Sejin Yoon
+Date: May 15, 2023
 
 */
 
