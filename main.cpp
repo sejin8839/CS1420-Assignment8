@@ -36,7 +36,7 @@ void displayInfo(ProductionWorker e)
     cout << "Shift: "
          << e.getShiftName() << endl;
     cout << "Shift number: "
-         << e.getShiftNumber() << endl;
+         << e.getShiftName() << endl;
     cout << "Pay rate: "
          << e.getPayRate() << endl;
 }
