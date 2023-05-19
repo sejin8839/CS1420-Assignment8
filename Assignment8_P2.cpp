@@ -17,22 +17,67 @@ class Matrix
     public:
     void input()
     {
-         //Students Todos
+          cout << "Enter the number of rows: ";
+        cin >> rows;
+        cout << "Enter the number of columns: ";
+        cin >> cols;
+
+        cout << "Enter matrix elements:" << endl;
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                cout << "Enter element at position (" << i << ", " << j << "): ";
+                cin >> mat[i][j];
+            }
+        }
     }
     void output()
     {
-         //Students Todos
+            cout << "Matrix:" << endl;
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                cout << mat[i][j] << "\t";
+            }
+            cout << endl;
+        }
     }
     Matrix add(Matrix t)
     {
-         //Students Todos
+        Matrix result;
+        result.rows = rows;
+        result.cols = cols;
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                result.mat[i][j] = mat[i][j] + t.mat[i][j];
+            }
+        }
+
+        return result;
     }
     Matrix sub(Matrix t)
     {
+        Matrix result;
+        result.rows = rows;
+        result.cols = cols;
 
-        //Students Todos
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                result.mat[i][j] = mat[i][j] - t.mat[i][j];
+            }
+        }
+
+        return result;
     }
 };
+
 int main()
 {
 Matrix m1,m2,add_mat,sub_mat;
